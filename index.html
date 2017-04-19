@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todoList</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="./static/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./static/vue.js"></script>
+</head>
+<body>
+    <div id="todoList">
+        <div id="input">
+            <div class="input-group">
+                <input type="text" class="form-control" v-model="todoText" placeholder="Add a todo">
+                <span class="input-group-btn"><button class="btn btn-default" @click="addTask">+</button></span>
+            </div>
+        </div>
+        <div id="display">
+            <h4 v-if="todoList.length > 0">Todo:</h4>
+            <h4 v-else class="allFinished">All Finished!</h4>
+            <ul class="list-group">
+                <todo-item v-for="(item,index) in sortTodoList"
+                           :item="item" :key="index"
+                           @finish="finish(index)" @delete="deleteTodo(index)" @change="changePriorty(index)"></todo-item>
+            </ul>
+            <h4 v-if="finishedList.length > 0">Finished:</h4>
+            <ul class="list-group">
+                <finished-item v-for="(item,index) in finishedList"
+                               :item="item" :key="index"
+                               @restore="restore(index)" @delete="deleteFinished(index)"></finished-item>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

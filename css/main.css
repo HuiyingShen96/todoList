@@ -1,0 +1,30 @@
+#display h4{
+    margin-left: 1em;
+}
+#display li button{
+    width: 21.2px;
+    height: 20px;
+    border: none;
+    background: url("../img/star.png") no-repeat;
+    background-position: -21.2px 0;
+    background-size: cover;
+}
+#display li button.important{
+    background-position: 0 0;
+}
+#display li span{
+    margin-left: 10px;
+    line-height:20px;
+}
+#display li a{
+    float: right;
+    line-height:20px;
+    padding:0 2px;
+}
+#display li.finished{
+    color: #888;
+}
+h4.allFinished {
+    text-align: center;
+    color: red;
+}
