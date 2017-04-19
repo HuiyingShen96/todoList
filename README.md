@@ -30,6 +30,7 @@ Vue.component('todo-item',{
 ```
 ### 5. 与自定义元素的关系
 
-vue.js API思维导图：
+
+【附】vue.js API思维导图：
 
 ![vue.js API思维导图](https://github.com/oSHYo/todoList/blob/master/img/API.png)
