@@ -3,6 +3,7 @@ a simple demo of using vue.js
 初学vue的一个小demo
 
 效果截图：
+
 ![image](https://github.com/oSHYo/todoList/blob/master/img/xiaoguotu.png)
 
 【初学Vue.js笔记】
@@ -29,4 +30,5 @@ Vue.component('todo-item',{
 ### 5. 与自定义元素的关系
 
 vue.js API思维导图：
+
 ![vue.js API思维导图](https://github.com/oSHYo/todoList/blob/master/img/API.png)
